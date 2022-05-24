@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row" id="order-index-header">
+        <div class="col-xs-1">
+            <a href="{{ url_for('home') }}"><span class="order-index-title">ORDERS</span></a>
+        </div>
+        <div class="col-md-10 col-xs-10 text-center">
+            <img id="order-index-icon" src="/static/img/delivery-truck.png"/>
+        </div>
+    </div>
+    <div class=row>
+        <div class="col-xs-12 no-padding">
+            <div class="list-group list-special">
+                {% for order in orders %}
+                    <a href="{{ url_for('order_show', order_id=order.id) }}" class="list-group-item list-special-item">
+                        <div class="row">
+                            <div class="col-xs-8 text-uppercase">
+                                {{ order.customer_name }}
+                            </div>
+                            <div class="col-xs-3 index-status text-uppercase">
+                                {{ order.status }}
+                            </div>
+                            <div class="col-xs-1">
+                                <i class="fa fa-caret-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

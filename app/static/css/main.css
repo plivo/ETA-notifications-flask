@@ -1,0 +1,137 @@
+.top-buffer {
+  margin-top:20px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.no-padding {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.full-screen-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:0;
+    margin:0;
+    height: 100%;
+    width:100%;
+    background-color: #E6E6DC;
+}
+
+.list-special .list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.list-special .list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.list-special-item {
+    margin-bottom: 2px;
+    border: 0;
+    background-color: #E6E6DC;
+    font-size: large;
+    font-family: 'Unica One', cursive;
+}
+
+.index-status {
+    color: #4AB759;
+}
+
+#icon-row {
+    margin-top: 17vh;
+}
+
+#home-icon {
+    height: 18vh;
+}
+
+#view-orders-row {
+    margin-top: 20vh;
+    color: #81A594;
+}
+
+.show-button-row {
+    margin-top: 5vh;
+}
+
+#view-orders-button {
+    background-color:white;
+    color:#81A594;
+    width:30%;
+    padding: 15px;
+    font-size: 5vh;
+    border-radius: 20px;
+    font-family: 'Unica One', cursive;
+}
+
+.show-button {
+    background-color:#81A594;
+    color:white;
+    width:30%;
+    padding: 15px;
+    font-size: 5vh;
+    border-radius: 20px;
+    font-family: 'Unica One', cursive;
+}
+
+#order-index-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #81A594;
+}
+
+.order-index-title {
+    line-height: 5vh;
+    padding-left: 15px;
+    color: white;
+}
+
+#order-index-icon {
+    height:5vh;
+}
+
+#plivo-logo {
+    background-image: url("/static/img/Plivo-Logo.png");
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    height: 25vh;
+    color: black;
+    font-family: 'Unica One', cursive;
+    font-size: 5vh;
+}
+
+#show-info-row {
+    padding: 10px;
+    color: #A4A6AC;
+    background-color: #2A2627;
+}
+
+#show-number-row {
+    padding: 5px;
+    color: white;
+    background-color: #2A2627;
+}
+
+#show-number {
+    color: white;
+    text-align: right;
+    padding-right: 30px;
+}
+
+#customer-name-p {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    width: 65%;
+    margin: 0;
+    line-height: 5vh;
+}

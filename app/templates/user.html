@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="full-screen-home">
+    <div class="container-fluid">
+        <div id="icon-row" class="row">
+            <div class="col-xs-12 text-center">
+                <img id="home-icon" src="/static/img/delivery-truck.png"/>
+            </div>
+        </div>
+        <div id="view-orders-row" class="row">
+            <div class="col-xs-12 text-center">
+                <form action="/add/orders" method="POST">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="number">Phone number:</label><br>
+                    <input type="text" id="number" name="phone_number"><br><br>
+                    <input type="submit" value="Submit">
+                  </form> 
+                  <p></p>
+                <a href="{{ url_for('order_index') }}"><p class="btn" id="view-orders-button">view orders</p></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
