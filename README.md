@@ -7,6 +7,9 @@ This example shows how [Plivo APIs](http://plivo.com/api) can be used to integra
 
 The next section explains how the application works and in-turn how Plivo as a platform works.
 
+## How it works?
+![ETA notification](app/static/gif/ETA-notification.mov)
+
 ## Set up
 
 ### Requirements
