@@ -23,11 +23,11 @@ This application verifies your phone number using the two factor authentication 
 
 1. Clone this repo.
     ```shell
-    git clone git@github.com:plivo-dev/2FA_FlaskApp.git    
+    git clone https://github.com/huzaif-plivo/ETA-notification-flask.git
     ```
 2. Change your working directory to 2FA_FlaskApp
     ```shell
-    cd 2FA_FlaskApp
+    cd ETA-notification-flask
     ```
 3. Install the dependencies using the requirements.txt file. You can use the below command.
     ```shell
