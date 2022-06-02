@@ -2,7 +2,12 @@ from app import app, db
 from flask import url_for, redirect, render_template, request
 import plivo
 from app.models import Order
+from datetime import datetime
 
+now = datetime.now()
+
+current_time = now.strftime("%H:%M:%S")
+print("Current Time =", current_time)
 
 def send_sms_notification(to, message_body, callback_url):
     client = plivo.RestClient(app.config['PLIVO_AUTH_ID'],app.config['PLIVO_AUTH_TOKEN'])
@@ -57,7 +62,7 @@ def order_pickup(order_id):
 
     callback_url = request.base_url.replace('/pickup', '') + '/notification/status/update'
     send_sms_notification(order.customer_phone_number,
-                          'Your package is ready and on its way to you!',
+                          'Your package is ready and on its way to you!' + now.strftime("%d/%m/%Y %H:%M:%S"),
                           callback_url)
 
     return redirect(url_for('order_show', order_id=order_id))
@@ -72,7 +77,7 @@ def order_deliver(order_id):
 
     callback_url = request.base_url.replace('/deliver', '') + '/notification/status/update'
     send_sms_notification(order.customer_phone_number,
-                          'Your package is delivered', callback_url)
+                          'Your package is delivered' + now.strftime("%d/%m/%Y %H:%M:%S"), callback_url)
 
     return redirect(url_for('order_index'))
 
