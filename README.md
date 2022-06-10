@@ -23,7 +23,7 @@ This application verifies your phone number using the two factor authentication 
 
 1. Clone this repo.
     ```shell
-    git clone https://github.com/huzaif-plivo/ETA-notification-flask.git
+    git clone https://github.com/plivo/ETA-notifications-flask.git
     ```
 2. Change your working directory to 2FA_FlaskApp
     ```shell
